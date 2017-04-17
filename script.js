@@ -26,9 +26,9 @@ var updatePreview = function () {
   '<br>' + 'Name: ' + firstName + ' ' + lastName +
   '<br>' + 'Description: ' + describeYou +
   '<br>' + '<b>Contact</b>' +
-  '<br>' + '<a href="mailto:EMAIL_ADDRESS" target="_blank">Email:</a>' +
+  '<br>' + '<a href="mailto:yourEmail" target="_blank">Email:</a>' +
   yourEmail +
-  '<br>' + '<a href="tel:PHONE_NUMBER" target="_blank">Phone Number:</a>' +
+  '<br>' + '<a href="tel:phoneNumber" target="_blank">Phone Number:</a>' +
   phoneNumber
 }
 
