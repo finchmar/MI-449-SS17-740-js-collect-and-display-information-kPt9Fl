@@ -13,23 +13,23 @@ var updatePreview = function () {
   var yourEmail = emailInput.value
   var phoneNumber = phoneInput.value
 
-  previewParagraph.innerHTML = '<b>Personal</b>' +
-  '<br>' + 'Name: ' + firstName + ' ' + lastName +
-  '<br>' + 'Description: ' + describeYou +
-  '<br>' + '<b>Contact</b>' +
-  '<br>' + '<a href="mailto:EMAIL_ADDRESS" target="_blank">Email:</a>' +
-  yourEmail +
-  '<br>' + '<a href="tel:PHONE_NUMBER" target="_blank">Phone Number:</a>' +
-  phoneNumber
+  previewParagraph.innerHTML =
+  '<b>Hi, my name is: </b>' + firstName + ' ' + lastName +
+  '<br>' + describeYou +
+  '<br>' + '<br>' +
+  'If you\'re interested in a date, you can email me at: ' +
+  '<a href="mailto:' + yourEmail + '" target="_blank">' + yourEmail + '</a>' +
+  '<br>' + '<br>' + 'or give me a call at: ' +
+  '<a href="tel:' + phoneNumber + '" target="_blank">' + phoneNumber + '</a>'
 
-  rawParagraph.textContent = '<b>Personal</b>' +
-  '<br>' + 'Name: ' + firstName + ' ' + lastName +
-  '<br>' + 'Description: ' + describeYou +
-  '<br>' + '<b>Contact</b>' +
-  '<br>' + '<a href="mailto:yourEmail" target="_blank">Email:</a>' +
-  yourEmail +
-  '<br>' + '<a href="tel:phoneNumber" target="_blank">Phone Number:</a>' +
-  phoneNumber
+  rawParagraph.textContent =
+  '<b>Hi, my name is: </b>' + firstName + ' ' + lastName +
+  '<br>' + describeYou +
+  '<br>' + '<br>' +
+  'If you\'re interested in a date, you can email me at: ' +
+  '<a href="mailto:' + yourEmail + '" target="_blank">' + yourEmail + '</a>' +
+  '<br>' + '<br>' + 'or give me a call at: ' +
+  '<a href="tel:' + phoneNumber + '" target="_blank">' + phoneNumber + '</a>'
 }
 
 firstNameInput.addEventListener('input', updatePreview)
