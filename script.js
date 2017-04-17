@@ -17,15 +17,19 @@ var updatePreview = function () {
   '<br>' + 'Name: ' + firstName + ' ' + lastName +
   '<br>' + 'Description: ' + describeYou +
   '<br>' + '<b>Contact</b>' +
-  '<br>' + 'Email: ' + yourEmail +
-  '<br>' + 'Phone Number: ' + phoneNumber
+  '<br>' + '<a href="mailto:EMAIL_ADDRESS" target="_blank">Email:</a>' +
+  yourEmail +
+  '<br>' + '<a href="tel:PHONE_NUMBER" target="_blank">Phone Number:</a>' +
+  phoneNumber
 
   rawParagraph.textContent = '<b>Personal</b>' +
   '<br>' + 'Name: ' + firstName + ' ' + lastName +
   '<br>' + 'Description: ' + describeYou +
   '<br>' + '<b>Contact</b>' +
-  '<br>' + 'Email: ' + yourEmail +
-  '<br>' + 'Phone Number: ' + phoneNumber
+  '<br>' + '<a href="mailto:EMAIL_ADDRESS" target="_blank">Email:</a>' +
+  yourEmail +
+  '<br>' + '<a href="tel:PHONE_NUMBER" target="_blank">Phone Number:</a>' +
+  phoneNumber
 }
 
 firstNameInput.addEventListener('input', updatePreview)
